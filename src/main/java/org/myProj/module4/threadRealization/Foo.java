@@ -12,7 +12,7 @@ class Foo {
                 Thread.currentThread().interrupt();
             }
         }
-        System.out.println("===>>> first method");
+        System.out.print("first");
         flag = 2;
         notifyAll();
     }
@@ -25,7 +25,7 @@ class Foo {
                 Thread.currentThread().interrupt();
             }
         }
-        System.out.println("===>>> second method");
+        System.out.print("second");
         flag = 3;
         notifyAll();
     }
@@ -39,7 +39,7 @@ class Foo {
             }
             notifyAll();
         }
-        System.out.println("===>>> third method");
+        System.out.print("third");
         notifyAll();
     }
 }
